@@ -66,7 +66,7 @@ struct DancerProfileView: View {
     
     func classList() -> some View {
         ScrollView(showsIndicators: false) {
-            VStack(spacing: 0) {
+            VStack(spacing: 8) {
                 ForEach(classViewModel.classList, id: \.self) { item in
                     Button(action: {
                         Safari.open(target: item.studioName)
