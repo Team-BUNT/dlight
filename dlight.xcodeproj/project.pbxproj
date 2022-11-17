@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37A3145129263B9F00ADD884 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145029263B9F00ADD884 /* WebView.swift */; };
-		37A314532926430E00ADD884 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A314522926430E00ADD884 /* FormView.swift */; };
+		37A3145129263B9F00ADD884 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145029263B9F00ADD884 /* Safari.swift */; };
 		37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A31458292648A700ADD884 /* OnboardingFirst.swift */; };
+		37A3146029267ADF00ADD884 /* OnbordingSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145F29267ADF00ADD884 /* OnbordingSecond.swift */; };
 		C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CBDF729261F8500B16628 /* dlightApp.swift */; };
 		C05CBDFC29261F8600B16628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFB29261F8600B16628 /* Assets.xcassets */; };
 		C05CBDFF29261F8600B16628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFE29261F8600B16628 /* Preview Assets.xcassets */; };
@@ -31,9 +31,9 @@
 
 /* Begin PBXFileReference section */
 		37A3144F29263B5500ADD884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		37A3145029263B9F00ADD884 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		37A314522926430E00ADD884 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		37A3145029263B9F00ADD884 /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
 		37A31458292648A700ADD884 /* OnboardingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirst.swift; sourceTree = "<group>"; };
+		37A3145F29267ADF00ADD884 /* OnbordingSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingSecond.swift; sourceTree = "<group>"; };
 		C05CBDF429261F8500B16628 /* dlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05CBDF729261F8500B16628 /* dlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dlightApp.swift; sourceTree = "<group>"; };
 		C05CBDFB29261F8600B16628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,11 +68,18 @@
 		37A314572926488500ADD884 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				37A3145029263B9F00ADD884 /* WebView.swift */,
-				37A314522926430E00ADD884 /* FormView.swift */,
 				37A31458292648A700ADD884 /* OnboardingFirst.swift */,
+				37A3145F29267ADF00ADD884 /* OnbordingSecond.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		37A314612926818700ADD884 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				37A3145029263B9F00ADD884 /* Safari.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		C05CBDEB29261F8500B16628 = {
@@ -97,11 +104,11 @@
 		C05CBDF629261F8500B16628 /* dlight */ = {
 			isa = PBXGroup;
 			children = (
+				37A314612926818700ADD884 /* Helper */,
 				37A314572926488500ADD884 /* View */,
 				37A3144F29263B5500ADD884 /* Info.plist */,
 				C05CBE0529261FD600B16628 /* GoogleService-Info.plist */,
 				C05CBDF729261F8500B16628 /* dlightApp.swift */,
-				C05CBDF929261F8500B16628 /* ContentView.swift */,
 				C07EF41329263E4D008A9D6D /* Video.swift */,
 				C07EF41F292643F7008A9D6D /* API */,
 				C07EF41D292641DD008A9D6D /* DanceRecommend */,
@@ -223,15 +230,14 @@
 			files = (
 				C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */,
 				C07EF41629263EDB008A9D6D /* Player.swift in Sources */,
-				C05CBDFA29261F8500B16628 /* ContentView.swift in Sources */,
 				C07EF41429263E4D008A9D6D /* Video.swift in Sources */,
 				C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */,
 				C07EF41829263F39008A9D6D /* PlayerView.swift in Sources */,
+				37A3146029267ADF00ADD884 /* OnbordingSecond.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
 				C07EF42329264B31008A9D6D /* FirestoreService.swift in Sources */,
 				C07EF42129264415008A9D6D /* FireStorageService.swift in Sources */,
-				37A314532926430E00ADD884 /* FormView.swift in Sources */,
-				37A3145129263B9F00ADD884 /* WebView.swift in Sources */,
+				37A3145129263B9F00ADD884 /* Safari.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
 				37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */,
 			);
