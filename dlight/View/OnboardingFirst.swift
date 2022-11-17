@@ -10,7 +10,7 @@ import SwiftUI
 struct OnboradingFirst: View {
     var body: some View {
         ZStack {
-            Color("bg").ignoresSafeArea()
+            Color("Background").ignoresSafeArea()
             VStack(spacing: 0) {
                 Text("당신은 춤에")
                     .font(.system(size: 34, weight: .bold))
@@ -28,7 +28,7 @@ struct OnboradingFirst: View {
                             .frame(maxHeight: 50)
                         Text("어색해요")
                             .font(.system(size: 17, weight: .semibold))
-                            .foregroundColor(Color("bg"))
+                            .foregroundColor(Color("Background"))
                     }
                 })
                 .padding(.bottom, 17)
@@ -41,7 +41,7 @@ struct OnboradingFirst: View {
                             .frame(maxHeight: 50)
                         Text("익숙해요")
                             .font(.system(size: 17, weight: .semibold))
-                            .foregroundColor(Color("bg"))
+                            .foregroundColor(Color("Background"))
                     }
                 })
                 .padding(.bottom, 17)
