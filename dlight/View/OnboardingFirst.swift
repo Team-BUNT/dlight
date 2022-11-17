@@ -35,8 +35,8 @@ struct OnboradingFirst: View {
                 .padding(.bottom, 17)
                 
                 NavigationLink(destination: {
-                    // NC1뷰로 가야됨
-                    EmptyView()
+                    NewbieView()
+                    //EmptyView()
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 14)
