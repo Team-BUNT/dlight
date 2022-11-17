@@ -50,7 +50,7 @@ struct NewbieView: View {
             .padding(.horizontal, 20)
             .navigationBarHidden(true)
         }
-        .background(Color("background"))
+        .background(Color("Background"))
     }
 }
 
