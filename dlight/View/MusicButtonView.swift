@@ -9,19 +9,19 @@
 import SwiftUI
 
 struct MusicButtonView: View {
-    
+
     let item: MusicGenre
-    
+
     @Binding var items: [MusicGenre]
-    
-    
+
+
     var body: some View {
-        
+
         Button {
-            
+
             //ViewModel 로 이사가야할 로직 🚧
             if items.contains(item) {
-                
+
                 items.removeAll { $0 == item }
             } else {
                 if items.count < 3 {
@@ -36,7 +36,7 @@ struct MusicButtonView: View {
                     .clipShape(
                         DiagonalFrame()
                     )
-                
+
                 VStack {
                     HStack {
                         Text(item.koreanText)
@@ -44,7 +44,7 @@ struct MusicButtonView: View {
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
                             .padding(20)
-    
+
                         Spacer()
                     }
                     Spacer()
@@ -70,7 +70,7 @@ struct MusicButtonView_Previews: PreviewProvider {
         MusicButtonView(item: .Boombap, items: .constant([]))
             .frame(width: 180, height: 160)
             .previewLayout(.sizeThatFits)
-            
+
     }
 }
 

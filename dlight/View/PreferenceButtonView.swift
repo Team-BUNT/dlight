@@ -9,22 +9,22 @@
 import SwiftUI
 
 struct PreferenceButtonView: View {
-    
+
     let text: String
-    
+
     @Binding var items: [String]
-    
+
     var body: some View {
-        
-    
+
+
             ZStack {
                 Color(.white)
-                    
+
                 Text(text)
                     .foregroundColor(Color("Background"))
                     .font(.system(size: 17))
                     .fontWeight(.semibold)
-                    
+
             }
             .frame(height: 60)
             .cornerRadius(10)
@@ -46,7 +46,7 @@ struct PreferenceButtonView: View {
                         items.append(text)
                     }
                 }
-                
+
                 print(items)
             }
     }

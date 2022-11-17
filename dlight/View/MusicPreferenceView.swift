@@ -11,9 +11,9 @@ import SwiftUI
 struct MusicPreferenceView: View {
     //간격 한번에 설정하기 위한 변수
     var totalSpacing: CGFloat = 20
-    
+
     @State var selectedItems: [MusicGenre] = []
-    
+
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
@@ -42,8 +42,8 @@ struct MusicPreferenceView: View {
                     .padding(.top, 20)
                 }
                 .background(Color("Background"))
-                
-                
+
+
                 VStack {
                     NavigationLink {
                         AnalysisView()
@@ -51,11 +51,12 @@ struct MusicPreferenceView: View {
                         Text("다음") //idk why
                             .font(.system(size: 17))
                             .fontWeight(.semibold)
+
                             .foregroundColor(.white)
                     }
                     .buttonStyle(PreferenceButtonStyle())
                     .padding(.horizontal, 20)
-                
+
                 }
                 .frame(height: 80)
             }
@@ -65,6 +66,7 @@ struct MusicPreferenceView: View {
 //        .navigationTitle(
 //            Text("음악 취향")
 //        )
+
     }
 }
 
