@@ -11,17 +11,21 @@ import AVKit
 struct Video : Identifiable {
     
     var id : String
-    var player : AVPlayer?
+    var player : AVPlayer
     var replay : Bool = true
     
-    init(model: DanceVideo) {
-        self.id = model.ID
-        
-        let manager = FireStorageService()
-//        manager.requestVideoURL(videoID: model.ID) { url in
-//            self.player = AVPlayer(url: url)
-//        }
-    }
+//    init() {
+//
+//    }
+//
+//    init(model: DanceVideo) {
+//        self.id = model.ID
+//
+//        let manager = FireStorageService()
+////        manager.requestVideoURL(videoID: model.ID) { url in
+////            self.player = AVPlayer(url: url)
+////        }
+//    }
 }
 
 struct DanceVideo: Codable {

@@ -22,6 +22,9 @@
 		C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41B29264039008A9D6D /* PlayerScrollView.swift */; };
 		C07EF42129264415008A9D6D /* FireStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF42029264415008A9D6D /* FireStorageService.swift */; };
 		C07EF42329264B31008A9D6D /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF42229264B31008A9D6D /* FirestoreService.swift */; };
+		C07EF427292650D4008A9D6D /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C07EF424292650D4008A9D6D /* video2.mp4 */; };
+		C07EF428292650D4008A9D6D /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C07EF425292650D4008A9D6D /* video3.mp4 */; };
+		C07EF429292650D4008A9D6D /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C07EF426292650D4008A9D6D /* video1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		C07EF41B29264039008A9D6D /* PlayerScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScrollView.swift; sourceTree = "<group>"; };
 		C07EF42029264415008A9D6D /* FireStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorageService.swift; sourceTree = "<group>"; };
 		C07EF42229264B31008A9D6D /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		C07EF424292650D4008A9D6D /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		C07EF425292650D4008A9D6D /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
+		C07EF426292650D4008A9D6D /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 		C05CBDEB29261F8500B16628 = {
 			isa = PBXGroup;
 			children = (
+				C07EF426292650D4008A9D6D /* video1.mp4 */,
+				C07EF424292650D4008A9D6D /* video2.mp4 */,
+				C07EF425292650D4008A9D6D /* video3.mp4 */,
 				C05CBDF629261F8500B16628 /* dlight */,
 				C05CBDF529261F8500B16628 /* Products */,
 			);
@@ -181,6 +190,9 @@
 			files = (
 				C05CBDFF29261F8600B16628 /* Preview Assets.xcassets in Resources */,
 				C05CBDFC29261F8600B16628 /* Assets.xcassets in Resources */,
+				C07EF427292650D4008A9D6D /* video2.mp4 in Resources */,
+				C07EF429292650D4008A9D6D /* video1.mp4 in Resources */,
+				C07EF428292650D4008A9D6D /* video3.mp4 in Resources */,
 				C05CBE0629261FD600B16628 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
