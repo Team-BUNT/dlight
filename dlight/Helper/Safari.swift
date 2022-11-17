@@ -22,6 +22,19 @@ enum StudioName: String {
     case movidic
     case newFlare
     
+    var name: String {
+        switch self {
+        case .bonafide:
+            return "보나파이드 스튜디오"
+        case .bunt:
+            return "번트 스튜디오"
+        case .movidic:
+            return "모비딕 스튜디오"
+        case .newFlare:
+            return "뉴플레어 스튜디오"
+        }
+    }
+    
     var url: String {
         switch self {
         case .bonafide:
