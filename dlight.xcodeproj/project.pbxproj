@@ -20,6 +20,8 @@
 		C07EF41829263F39008A9D6D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41729263F39008A9D6D /* PlayerView.swift */; };
 		C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */; };
 		C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41B29264039008A9D6D /* PlayerScrollView.swift */; };
+		C07EF42129264415008A9D6D /* FireStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF42029264415008A9D6D /* FireStorageService.swift */; };
+		C07EF42329264B31008A9D6D /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF42229264B31008A9D6D /* FirestoreService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C07EF41729263F39008A9D6D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceRecommendView.swift; sourceTree = "<group>"; };
 		C07EF41B29264039008A9D6D /* PlayerScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScrollView.swift; sourceTree = "<group>"; };
+		C07EF42029264415008A9D6D /* FireStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorageService.swift; sourceTree = "<group>"; };
+		C07EF42229264B31008A9D6D /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 				C05CBDF729261F8500B16628 /* dlightApp.swift */,
 				C05CBDF929261F8500B16628 /* ContentView.swift */,
 				C07EF41329263E4D008A9D6D /* Video.swift */,
+				C07EF41F292643F7008A9D6D /* API */,
 				C07EF41D292641DD008A9D6D /* DanceRecommend */,
 				C05CBDFB29261F8600B16628 /* Assets.xcassets */,
 				C05CBDFD29261F8600B16628 /* Preview Content */,
@@ -97,6 +102,15 @@
 				C07EF41B29264039008A9D6D /* PlayerScrollView.swift */,
 			);
 			path = DanceRecommend;
+			sourceTree = "<group>";
+		};
+		C07EF41F292643F7008A9D6D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C07EF42029264415008A9D6D /* FireStorageService.swift */,
+				C07EF42229264B31008A9D6D /* FirestoreService.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +199,8 @@
 				C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */,
 				C07EF41829263F39008A9D6D /* PlayerView.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
+				C07EF42329264B31008A9D6D /* FirestoreService.swift in Sources */,
+				C07EF42129264415008A9D6D /* FireStorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

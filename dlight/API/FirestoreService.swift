@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
+
+class FirestoreService {
+    
+//    func requestDanceVideos(withTag: [String]) -> [Video] {
+//
+//    }
+}
