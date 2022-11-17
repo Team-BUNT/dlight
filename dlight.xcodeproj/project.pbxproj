@@ -73,10 +73,7 @@
 				C05CBDF729261F8500B16628 /* dlightApp.swift */,
 				C05CBDF929261F8500B16628 /* ContentView.swift */,
 				C07EF41329263E4D008A9D6D /* Video.swift */,
-				C07EF41529263EDB008A9D6D /* Player.swift */,
-				C07EF41729263F39008A9D6D /* PlayerView.swift */,
-				C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */,
-				C07EF41B29264039008A9D6D /* PlayerScrollView.swift */,
+				C07EF41D292641DD008A9D6D /* DanceRecommend */,
 				C05CBDFB29261F8600B16628 /* Assets.xcassets */,
 				C05CBDFD29261F8600B16628 /* Preview Content */,
 			);
@@ -89,6 +86,17 @@
 				C05CBDFE29261F8600B16628 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C07EF41D292641DD008A9D6D /* DanceRecommend */ = {
+			isa = PBXGroup;
+			children = (
+				C07EF41529263EDB008A9D6D /* Player.swift */,
+				C07EF41729263F39008A9D6D /* PlayerView.swift */,
+				C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */,
+				C07EF41B29264039008A9D6D /* PlayerScrollView.swift */,
+			);
+			path = DanceRecommend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
