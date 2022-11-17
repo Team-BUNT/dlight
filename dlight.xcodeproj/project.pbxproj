@@ -17,6 +17,16 @@
 		C05CBE092926206800B16628 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C05CBE082926206800B16628 /* FirebaseFirestore */; };
 		C05CBE0B2926206800B16628 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C05CBE0A2926206800B16628 /* FirebaseFirestoreSwift */; };
 		C05CBE0D2926206800B16628 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C05CBE0C2926206800B16628 /* FirebaseStorage */; };
+		C07EF41429263E4D008A9D6D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41329263E4D008A9D6D /* Video.swift */; };
+		C07EF41629263EDB008A9D6D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41529263EDB008A9D6D /* Player.swift */; };
+		C07EF41829263F39008A9D6D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41729263F39008A9D6D /* PlayerView.swift */; };
+		C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */; };
+		C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41B29264039008A9D6D /* PlayerScrollView.swift */; };
+		C07EF42129264415008A9D6D /* FireStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF42029264415008A9D6D /* FireStorageService.swift */; };
+		C07EF42329264B31008A9D6D /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF42229264B31008A9D6D /* FirestoreService.swift */; };
+		C07EF427292650D4008A9D6D /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C07EF424292650D4008A9D6D /* video2.mp4 */; };
+		C07EF428292650D4008A9D6D /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C07EF425292650D4008A9D6D /* video3.mp4 */; };
+		C07EF429292650D4008A9D6D /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C07EF426292650D4008A9D6D /* video1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +39,16 @@
 		C05CBDFB29261F8600B16628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C05CBDFE29261F8600B16628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C05CBE0529261FD600B16628 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C07EF41329263E4D008A9D6D /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		C07EF41529263EDB008A9D6D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C07EF41729263F39008A9D6D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceRecommendView.swift; sourceTree = "<group>"; };
+		C07EF41B29264039008A9D6D /* PlayerScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScrollView.swift; sourceTree = "<group>"; };
+		C07EF42029264415008A9D6D /* FireStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorageService.swift; sourceTree = "<group>"; };
+		C07EF42229264B31008A9D6D /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		C07EF424292650D4008A9D6D /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		C07EF425292650D4008A9D6D /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
+		C07EF426292650D4008A9D6D /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,9 @@
 		C05CBDEB29261F8500B16628 = {
 			isa = PBXGroup;
 			children = (
+				C07EF426292650D4008A9D6D /* video1.mp4 */,
+				C07EF424292650D4008A9D6D /* video2.mp4 */,
+				C07EF425292650D4008A9D6D /* video3.mp4 */,
 				C05CBDF629261F8500B16628 /* dlight */,
 				C05CBDF529261F8500B16628 /* Products */,
 			);
@@ -78,6 +101,10 @@
 				37A3144F29263B5500ADD884 /* Info.plist */,
 				C05CBE0529261FD600B16628 /* GoogleService-Info.plist */,
 				C05CBDF729261F8500B16628 /* dlightApp.swift */,
+				C05CBDF929261F8500B16628 /* ContentView.swift */,
+				C07EF41329263E4D008A9D6D /* Video.swift */,
+				C07EF41F292643F7008A9D6D /* API */,
+				C07EF41D292641DD008A9D6D /* DanceRecommend */,
 				C05CBDFB29261F8600B16628 /* Assets.xcassets */,
 				C05CBDFD29261F8600B16628 /* Preview Content */,
 			);
@@ -90,6 +117,26 @@
 				C05CBDFE29261F8600B16628 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C07EF41D292641DD008A9D6D /* DanceRecommend */ = {
+			isa = PBXGroup;
+			children = (
+				C07EF41529263EDB008A9D6D /* Player.swift */,
+				C07EF41729263F39008A9D6D /* PlayerView.swift */,
+				C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */,
+				C07EF41B29264039008A9D6D /* PlayerScrollView.swift */,
+			);
+			path = DanceRecommend;
+			sourceTree = "<group>";
+		};
+		C07EF41F292643F7008A9D6D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C07EF42029264415008A9D6D /* FireStorageService.swift */,
+				C07EF42229264B31008A9D6D /* FirestoreService.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +207,9 @@
 			files = (
 				C05CBDFF29261F8600B16628 /* Preview Assets.xcassets in Resources */,
 				C05CBDFC29261F8600B16628 /* Assets.xcassets in Resources */,
+				C07EF427292650D4008A9D6D /* video2.mp4 in Resources */,
+				C07EF429292650D4008A9D6D /* video1.mp4 in Resources */,
+				C07EF428292650D4008A9D6D /* video3.mp4 in Resources */,
 				C05CBE0629261FD600B16628 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +221,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */,
+				C07EF41629263EDB008A9D6D /* Player.swift in Sources */,
+				C05CBDFA29261F8500B16628 /* ContentView.swift in Sources */,
+				C07EF41429263E4D008A9D6D /* Video.swift in Sources */,
+				C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */,
+				C07EF41829263F39008A9D6D /* PlayerView.swift in Sources */,
+				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
+				C07EF42329264B31008A9D6D /* FirestoreService.swift in Sources */,
+				C07EF42129264415008A9D6D /* FireStorageService.swift in Sources */,
 				37A314532926430E00ADD884 /* FormView.swift in Sources */,
 				37A3145129263B9F00ADD884 /* WebView.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
