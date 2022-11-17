@@ -10,6 +10,7 @@
 		37A3145129263B9F00ADD884 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145029263B9F00ADD884 /* WebView.swift */; };
 		37A314532926430E00ADD884 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A314522926430E00ADD884 /* FormView.swift */; };
 		37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A31458292648A700ADD884 /* OnboardingFirst.swift */; };
+		AEA2152829267DAF00B5F878 /* NewbieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2152729267DAF00B5F878 /* NewbieView.swift */; };
 		C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CBDF729261F8500B16628 /* dlightApp.swift */; };
 		C05CBDFC29261F8600B16628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFB29261F8600B16628 /* Assets.xcassets */; };
 		C05CBDFF29261F8600B16628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFE29261F8600B16628 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		37A3145029263B9F00ADD884 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		37A314522926430E00ADD884 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		37A31458292648A700ADD884 /* OnboardingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirst.swift; sourceTree = "<group>"; };
+		AEA2152729267DAF00B5F878 /* NewbieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewbieView.swift; sourceTree = "<group>"; };
 		C05CBDF429261F8500B16628 /* dlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05CBDF729261F8500B16628 /* dlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dlightApp.swift; sourceTree = "<group>"; };
 		C05CBDFB29261F8600B16628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				37A3145029263B9F00ADD884 /* WebView.swift */,
 				37A314522926430E00ADD884 /* FormView.swift */,
 				37A31458292648A700ADD884 /* OnboardingFirst.swift */,
+				AEA2152729267DAF00B5F878 /* NewbieView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,7 +104,6 @@
 				37A3144F29263B5500ADD884 /* Info.plist */,
 				C05CBE0529261FD600B16628 /* GoogleService-Info.plist */,
 				C05CBDF729261F8500B16628 /* dlightApp.swift */,
-				C05CBDF929261F8500B16628 /* ContentView.swift */,
 				C07EF41329263E4D008A9D6D /* Video.swift */,
 				C07EF41F292643F7008A9D6D /* API */,
 				C07EF41D292641DD008A9D6D /* DanceRecommend */,
@@ -222,8 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */,
+				AEA2152829267DAF00B5F878 /* NewbieView.swift in Sources */,
 				C07EF41629263EDB008A9D6D /* Player.swift in Sources */,
-				C05CBDFA29261F8500B16628 /* ContentView.swift in Sources */,
 				C07EF41429263E4D008A9D6D /* Video.swift in Sources */,
 				C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */,
 				C07EF41829263F39008A9D6D /* PlayerView.swift in Sources */,
@@ -362,7 +364,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"dlight/Preview Content\"";
-				DEVELOPMENT_TEAM = JP3V2463G6;
+				DEVELOPMENT_TEAM = 57QLLZQ6H9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dlight/Info.plist;
@@ -393,7 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"dlight/Preview Content\"";
-				DEVELOPMENT_TEAM = JP3V2463G6;
+				DEVELOPMENT_TEAM = 57QLLZQ6H9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dlight/Info.plist;
