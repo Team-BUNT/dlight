@@ -12,6 +12,11 @@
 		37A3145129263B9F00ADD884 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145029263B9F00ADD884 /* Safari.swift */; };
 		37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A31458292648A700ADD884 /* OnboardingFirst.swift */; };
 		37A3146029267ADF00ADD884 /* OnbordingSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145F29267ADF00ADD884 /* OnbordingSecond.swift */; };
+		AEA2153629269F7E00B5F878 /* NewbieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2153529269F7E00B5F878 /* NewbieView.swift */; };
+		AEA215382926A01200B5F878 /* PreferenceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA215372926A01200B5F878 /* PreferenceButtonView.swift */; };
+		AEA2153A2926A03500B5F878 /* MusicPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA215392926A03500B5F878 /* MusicPreferenceView.swift */; };
+		AEA2153C2926A04F00B5F878 /* MusicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2153B2926A04F00B5F878 /* MusicButtonView.swift */; };
+		AEA2153E2926A08200B5F878 /* DiagonalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2153D2926A08200B5F878 /* DiagonalFrame.swift */; };
 		C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CBDF729261F8500B16628 /* dlightApp.swift */; };
 		C05CBDFC29261F8600B16628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFB29261F8600B16628 /* Assets.xcassets */; };
 		C05CBDFF29261F8600B16628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFE29261F8600B16628 /* Preview Assets.xcassets */; };
@@ -38,6 +43,11 @@
 		37A3145029263B9F00ADD884 /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
 		37A31458292648A700ADD884 /* OnboardingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirst.swift; sourceTree = "<group>"; };
 		37A3145F29267ADF00ADD884 /* OnbordingSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingSecond.swift; sourceTree = "<group>"; };
+		AEA2153529269F7E00B5F878 /* NewbieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewbieView.swift; sourceTree = "<group>"; };
+		AEA215372926A01200B5F878 /* PreferenceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceButtonView.swift; sourceTree = "<group>"; };
+		AEA215392926A03500B5F878 /* MusicPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPreferenceView.swift; sourceTree = "<group>"; };
+		AEA2153B2926A04F00B5F878 /* MusicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicButtonView.swift; sourceTree = "<group>"; };
+		AEA2153D2926A08200B5F878 /* DiagonalFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalFrame.swift; sourceTree = "<group>"; };
 		C05CBDF429261F8500B16628 /* dlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05CBDF729261F8500B16628 /* dlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dlightApp.swift; sourceTree = "<group>"; };
 		C05CBDFB29261F8600B16628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +86,11 @@
 				34406145292688B400C485E7 /* ClassModel.swift */,
 				37A31458292648A700ADD884 /* OnboardingFirst.swift */,
 				37A3145F29267ADF00ADD884 /* OnbordingSecond.swift */,
+				AEA2153529269F7E00B5F878 /* NewbieView.swift */,
+				AEA215372926A01200B5F878 /* PreferenceButtonView.swift */,
+				AEA215392926A03500B5F878 /* MusicPreferenceView.swift */,
+				AEA2153B2926A04F00B5F878 /* MusicButtonView.swift */,
+				AEA2153D2926A08200B5F878 /* DiagonalFrame.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,16 +249,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA2153C2926A04F00B5F878 /* MusicButtonView.swift in Sources */,
 				34406146292688B400C485E7 /* ClassModel.swift in Sources */,
 				C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */,
 				C07EF41629263EDB008A9D6D /* Player.swift in Sources */,
 				C07EF41429263E4D008A9D6D /* Video.swift in Sources */,
+				AEA2153A2926A03500B5F878 /* MusicPreferenceView.swift in Sources */,
 				C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */,
+				AEA2153629269F7E00B5F878 /* NewbieView.swift in Sources */,
 				C07EF41829263F39008A9D6D /* PlayerView.swift in Sources */,
 				37A3146029267ADF00ADD884 /* OnbordingSecond.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
+				AEA2153E2926A08200B5F878 /* DiagonalFrame.swift in Sources */,
 				344061442926798200C485E7 /* DancerProfileView.swift in Sources */,
 				C07EF42329264B31008A9D6D /* FirestoreService.swift in Sources */,
+				AEA215382926A01200B5F878 /* PreferenceButtonView.swift in Sources */,
 				C07EF42129264415008A9D6D /* FireStorageService.swift in Sources */,
 				37A3145129263B9F00ADD884 /* Safari.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
