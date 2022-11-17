@@ -10,6 +10,7 @@
 		37A3145129263B9F00ADD884 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145029263B9F00ADD884 /* WebView.swift */; };
 		37A314532926430E00ADD884 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A314522926430E00ADD884 /* FormView.swift */; };
 		37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A31458292648A700ADD884 /* OnboardingFirst.swift */; };
+		37A3145B29264C5A00ADD884 /* OnboardingSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145A29264C5A00ADD884 /* OnboardingSecond.swift */; };
 		C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CBDF729261F8500B16628 /* dlightApp.swift */; };
 		C05CBDFC29261F8600B16628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFB29261F8600B16628 /* Assets.xcassets */; };
 		C05CBDFF29261F8600B16628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFE29261F8600B16628 /* Preview Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		37A3145029263B9F00ADD884 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		37A314522926430E00ADD884 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		37A31458292648A700ADD884 /* OnboardingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirst.swift; sourceTree = "<group>"; };
+		37A3145A29264C5A00ADD884 /* OnboardingSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSecond.swift; sourceTree = "<group>"; };
 		C05CBDF429261F8500B16628 /* dlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05CBDF729261F8500B16628 /* dlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dlightApp.swift; sourceTree = "<group>"; };
 		C05CBDFB29261F8600B16628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				37A3145029263B9F00ADD884 /* WebView.swift */,
 				37A314522926430E00ADD884 /* FormView.swift */,
 				37A31458292648A700ADD884 /* OnboardingFirst.swift */,
+				37A3145A29264C5A00ADD884 /* OnboardingSecond.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A314532926430E00ADD884 /* FormView.swift in Sources */,
+				37A3145B29264C5A00ADD884 /* OnboardingSecond.swift in Sources */,
 				37A3145129263B9F00ADD884 /* WebView.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
 				37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */,

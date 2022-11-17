@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct OnboradingFirst: View {
+    @State var test: Bool = false
+    @Binding var var familiar: Bool
+    
     var body: some View {
         ZStack {
             Color("bg").ignoresSafeArea()
@@ -20,7 +23,7 @@ struct OnboradingFirst: View {
                 Spacer()
                 
                 Button(action: {
-                    
+                    familiar = false
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 14)
@@ -33,7 +36,7 @@ struct OnboradingFirst: View {
                 })
                 .padding(.bottom, 17)
                 Button(action: {
-                    
+                    familiar = true
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 14)
@@ -51,8 +54,4 @@ struct OnboradingFirst: View {
     }
 }
 
-struct OnboradingFirst_Previews: PreviewProvider {
-    static var previews: some View {
-        OnboradingFirst()
-    }
-}
+
