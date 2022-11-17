@@ -69,11 +69,11 @@ struct DancerProfileView: View {
             VStack(spacing: 0) {
                 ForEach(classViewModel.classList, id: \.self) { item in
                     Button(action: {
-                        // Connect to Safari
+                        Safari.open(target: item.studioName)
                     }, label: {
                         ClassRow(classImage: item.classImage,
                                  className: item.className,
-                                 studioName: item.studioName,
+                                 studioName: item.studioName.name,
                                  studioAddress: item.studioAddress,
                                  classTime: item.classTime
                         )
