@@ -52,7 +52,7 @@ struct MusicButtonView: View {
             }
         }
         .aspectRatio(16 / 14, contentMode: .fit)
-        .background(Color("Container"))
+        .background(Color("Indicators"))
         .cornerRadius(10)
         .if(items.contains(item)) { view in
             view.overlay(

@@ -61,7 +61,7 @@ struct PreferenceButtonStyle: ButtonStyle {
         configuration.label
             .frame(height: 60)
             .frame(maxWidth: .infinity)
-            .background(configuration.isPressed ? Color("Primary") : Color(Color.white))
+            .background(configuration.isPressed ? Color("Primary") : Color(.white))
             .cornerRadius(10)
 //            .scaleEffect(configuration.isPressed ? 1.3 : 1.0)
     }
@@ -69,7 +69,7 @@ struct PreferenceButtonStyle: ButtonStyle {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NewbieView()
             .preferredColorScheme(.dark)
     }
 }

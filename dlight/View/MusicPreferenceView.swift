@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum MusicGenre : CaseIterable{
+enum MusicGenre : CaseIterable {
     case KPOP, BOOMBAP, EDM, JAZZ
 }
 
@@ -33,35 +33,28 @@ struct MusicPreferenceView: View {
                     .padding(.horizontal, totalSpacing)
                     .padding(.top, 20)
                 }
-                .background(Color("background")) // should change
-                
+                .background(Color("Background"))
                 
                 VStack {
                     NavigationLink {
-                        //VideoView()
-                        
+                        //VideoView() 여기서 스타일을 찾는 중입니다 뷰 가면 될듯
                     } label: {
-                        Text("Next")
+                        Text("다음")
                             .font(.title3)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                     }
                     .buttonStyle(PreferenceButtonStyle())
                     .padding(.horizontal, 20)
-                
                 }
                 .frame(height: 80)
-            
             }
-            
             
 //            VStack {
 //                Spacer()
-//
-//
 //            }
         }
-        .background(Color("background")) // should change
+        .background(Color("Background"))
         .navigationTitle(
             Text("음악 취향")
         )

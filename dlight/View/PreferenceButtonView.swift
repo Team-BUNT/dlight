@@ -14,17 +14,14 @@ struct PreferenceButtonView: View {
     @Binding var items: [String]
     
     var body: some View {
-        
     
             ZStack {
-            
-                Color("Container")
+                Color(.white)
                     
                 Text(text)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .font(.system(size: 17))
                     .fontWeight(.semibold)
-                    
             }
             .frame(height: 60)
             .cornerRadius(10)
@@ -32,12 +29,11 @@ struct PreferenceButtonView: View {
                 view.overlay(
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(lineWidth: 1.5)
-                        .fill(Color("AccentColor"))
+                        .fill(Color("Primary"))
                 )
             }
             .onTapGesture {
                 if items.contains(text) {
-                    
                     items.removeAll()
                 } else {
                     if items.count < 1 {
@@ -47,7 +43,6 @@ struct PreferenceButtonView: View {
                         items.append(text)
                     }
                 }
-                
                 print(items)
             }
     }
