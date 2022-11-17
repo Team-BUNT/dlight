@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+enum MusicGenre {
+    case KPOP
+    case BOOMBAP
+    case EDM
+    case JAZZ
+}
+
 struct MusicPreferenceView: View {
     //간격 한번에 설정하기 위한 변수
     var totalSpacing: CGFloat = 20
@@ -34,7 +41,8 @@ struct MusicPreferenceView: View {
                 
                 VStack {
                     NavigationLink {
-                        VideoView()
+                        //VideoView()
+                        
                     } label: {
                         Text("Next")
                             .font(.title3)

@@ -12,6 +12,7 @@
 		37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A31458292648A700ADD884 /* OnboardingFirst.swift */; };
 		AEA2152829267DAF00B5F878 /* NewbieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2152729267DAF00B5F878 /* NewbieView.swift */; };
 		AEA2152A29267F0F00B5F878 /* MusicPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2152929267F0F00B5F878 /* MusicPreferenceView.swift */; };
+		AEA2152C292682D300B5F878 /* MusicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2152B292682D300B5F878 /* MusicButtonView.swift */; };
 		C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CBDF729261F8500B16628 /* dlightApp.swift */; };
 		C05CBDFC29261F8600B16628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFB29261F8600B16628 /* Assets.xcassets */; };
 		C05CBDFF29261F8600B16628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05CBDFE29261F8600B16628 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		37A31458292648A700ADD884 /* OnboardingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirst.swift; sourceTree = "<group>"; };
 		AEA2152729267DAF00B5F878 /* NewbieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewbieView.swift; sourceTree = "<group>"; };
 		AEA2152929267F0F00B5F878 /* MusicPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPreferenceView.swift; sourceTree = "<group>"; };
+		AEA2152B292682D300B5F878 /* MusicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicButtonView.swift; sourceTree = "<group>"; };
 		C05CBDF429261F8500B16628 /* dlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05CBDF729261F8500B16628 /* dlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dlightApp.swift; sourceTree = "<group>"; };
 		C05CBDFB29261F8600B16628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				37A31458292648A700ADD884 /* OnboardingFirst.swift */,
 				AEA2152729267DAF00B5F878 /* NewbieView.swift */,
 				AEA2152929267F0F00B5F878 /* MusicPreferenceView.swift */,
+				AEA2152B292682D300B5F878 /* MusicButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				AEA2152A29267F0F00B5F878 /* MusicPreferenceView.swift in Sources */,
 				37A314532926430E00ADD884 /* FormView.swift in Sources */,
 				37A3145129263B9F00ADD884 /* WebView.swift in Sources */,
+				AEA2152C292682D300B5F878 /* MusicButtonView.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
 				37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */,
 			);
