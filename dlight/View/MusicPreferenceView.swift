@@ -7,11 +7,8 @@
 
 import SwiftUI
 
-enum MusicGenre {
-    case KPOP
-    case BOOMBAP
-    case EDM
-    case JAZZ
+enum MusicGenre : CaseIterable{
+    case KPOP, BOOMBAP, EDM, JAZZ
 }
 
 struct MusicPreferenceView: View {
@@ -36,7 +33,7 @@ struct MusicPreferenceView: View {
                     .padding(.horizontal, totalSpacing)
                     .padding(.top, 20)
                 }
-                .background(Color("background"))
+                .background(Color("background")) // should change
                 
                 
                 VStack {
@@ -64,7 +61,7 @@ struct MusicPreferenceView: View {
 //
 //            }
         }
-        .background(Color("background"))
+        .background(Color("background")) // should change
         .navigationTitle(
             Text("음악 취향")
         )

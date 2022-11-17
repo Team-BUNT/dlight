@@ -67,7 +67,7 @@ struct MusicButtonView: View {
 
 struct MusicButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        MusicButtonView(item: .Boombap, items: .constant([]))
+        MusicButtonView(item: .BOOMBAP, items: .constant([]))
             .frame(width: 180, height: 160)
             .previewLayout(.sizeThatFits)
             
