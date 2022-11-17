@@ -34,7 +34,7 @@ struct NewbieView: View {
                         PreferenceButtonView(text: choice[index], items: $selectedItems)
                     }
                 }
-                
+
                 Spacer()
                 
                 NavigationLink {
@@ -46,15 +46,11 @@ struct NewbieView: View {
                         .foregroundColor(.white)
                 }
                 .buttonStyle(PreferenceButtonStyle())
-                
-                
             }
             .padding(.horizontal, 20)
             .navigationBarHidden(true)
-            
         }
         .background(Color("background"))
-        
     }
 }
 
