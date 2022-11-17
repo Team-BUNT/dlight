@@ -19,6 +19,7 @@
 		C07EF41629263EDB008A9D6D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41529263EDB008A9D6D /* Player.swift */; };
 		C07EF41829263F39008A9D6D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41729263F39008A9D6D /* PlayerView.swift */; };
 		C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */; };
+		C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41B29264039008A9D6D /* PlayerScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C07EF41529263EDB008A9D6D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C07EF41729263F39008A9D6D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceRecommendView.swift; sourceTree = "<group>"; };
+		C07EF41B29264039008A9D6D /* PlayerScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				C07EF41529263EDB008A9D6D /* Player.swift */,
 				C07EF41729263F39008A9D6D /* PlayerView.swift */,
 				C07EF41929263FB6008A9D6D /* DanceRecommendView.swift */,
+				C07EF41B29264039008A9D6D /* PlayerScrollView.swift */,
 				C05CBDFB29261F8600B16628 /* Assets.xcassets */,
 				C05CBDFD29261F8600B16628 /* Preview Content */,
 			);
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */,
 				C07EF41629263EDB008A9D6D /* Player.swift in Sources */,
 				C05CBDFA29261F8500B16628 /* ContentView.swift in Sources */,
 				C07EF41429263E4D008A9D6D /* Video.swift in Sources */,
