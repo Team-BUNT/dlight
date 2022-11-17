@@ -12,34 +12,37 @@ struct OnboradingFirst: View {
         ZStack {
             Color("Background").ignoresSafeArea()
             VStack(spacing: 0) {
-                Text("당신은 춤에")
+                Text("지금 배우고 싶은\n댄스 스타일이 있나요?")
                     .font(.system(size: 34, weight: .bold))
                     .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
                     .padding(.top, 150)
                 
                 Spacer()
                 
-                Button(action: {
-                    
+                NavigationLink(destination: {
+                    OnbordingSecond()
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 14)
                             .fill(.white)
                             .frame(maxHeight: 50)
-                        Text("어색해요")
+                        Text("네 있어요!")
                             .font(.system(size: 17, weight: .semibold))
                             .foregroundColor(Color("Background"))
                     }
                 })
                 .padding(.bottom, 17)
-                Button(action: {
-                    
+                
+                NavigationLink(destination: {
+                    // NC1뷰로 가야됨
+                    EmptyView()
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 14)
                             .fill(.white)
                             .frame(maxHeight: 50)
-                        Text("익숙해요")
+                        Text("아뇨 잘 모르겠어요")
                             .font(.system(size: 17, weight: .semibold))
                             .foregroundColor(Color("Background"))
                     }
@@ -48,6 +51,7 @@ struct OnboradingFirst: View {
             }
             .padding(.horizontal, 24)
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
