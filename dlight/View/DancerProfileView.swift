@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DancerProfileView: View {
+    @StateObject var classViewModel = ClassViewModel()
     let tags = ["가벼운", "세련된", "절제된"]
     
     var body: some View {
@@ -15,8 +16,9 @@ struct DancerProfileView: View {
             Color("Background")
                 .ignoresSafeArea(.all)
             
-            VStack(alignment: .leading, spacing: 28) {
+            VStack(alignment: .leading, spacing: 8) {
                 information()
+                    .padding(.bottom, 20)
                 
                 Text("클래스 목록")
                     .font(.system(size: 17, weight: .semibold))
@@ -24,6 +26,7 @@ struct DancerProfileView: View {
                     .tracking(-0.41)
                 classList()
             }
+            .padding(.horizontal)
         }
     }
     
@@ -54,15 +57,7 @@ struct DancerProfileView: View {
                 // Tags
                 HStack(spacing: 8) {
                     ForEach(tags, id: \.self) { tag in
-                        Text(tag)
-                            .font(.system(size: 15, weight: .semibold))
-                            .foregroundColor(Color.white)
-                            .padding(.horizontal, 10)
-                            .padding(.vertical, 4)
-                            .background {
-                                Capsule()
-                                    .fill(Color("Primary"))
-                            }
+                        Tag(tagString: tag)
                     }
                 }
             }
@@ -71,19 +66,88 @@ struct DancerProfileView: View {
     
     func classList() -> some View {
         ScrollView(showsIndicators: false) {
-            Text("")
+            VStack(spacing: 0) {
+                ForEach(classViewModel.classList, id: \.self) { item in
+                    Button(action: {
+                        // Connect to Safari
+                    }, label: {
+                        ClassRow(classImage: item.classImage,
+                                 className: item.className,
+                                 studioName: item.studioName,
+                                 studioAddress: item.studioAddress,
+                                 classTime: item.classTime
+                        )
+                    })
+                }
+            }
         }
     }
 }
 
-struct ClassRow: View {
+
+// MARK: - Components
+struct Tag: View {
+    var tagString: String = "Tag Label"
+    
     var body: some View {
-        HStack {
-            Image("Dancer")
+        Text(tagString)
+            .font(.system(size: 15, weight: .semibold))
+            .foregroundColor(Color.white)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 4)
+            .background {
+                Capsule()
+                    .fill(Color("Primary"))
+            }
+    }
+}
+
+struct ClassRow: View {
+    var classImage: String = "Dancer"
+    var className: String = "Class Name"
+    var studioName: String = "Studio Name"
+    var studioAddress: String = "Studio Address"
+    var classTime: String = "class Time"
+    
+    var body: some View {
+        HStack(alignment: .top, spacing: 12) {
+            // Class Image
+            Image(classImage)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 70, height: 70)
                 .clipShape(RoundedRectangle(cornerRadius: 7))
+            
+            // Class informations
+            VStack(alignment: .leading) {
+                Text(className)
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundColor(Color.white)
+                    .tracking(-0.41)
+                Text(studioName)
+                    .font(.system(size: 15, weight: .regular))
+                    .foregroundColor(Color("Text-Secondary"))
+                    .tracking(-0.24)
+                Text(studioAddress)
+                    .font(.system(size: 12, weight: .regular))
+                    .foregroundColor(Color("Text-Secondary"))
+                    .tracking(-0.24)
+            }
+            
+            Spacer()
+            
+            HStack(spacing: 4) {
+                // Class Time
+                Text(classTime)
+                    .font(.system(size: 15, weight: .regular))
+                    .foregroundColor(Color("Text-Secondary"))
+                    .tracking(-0.24)
+                
+                // Indicators
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 15))
+                    .foregroundColor(Color("Indicators"))
+            }
         }
     }
 }
