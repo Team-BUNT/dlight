@@ -16,7 +16,18 @@ struct MusicPreferenceView: View {
     
     var body: some View {
         ZStack {
-            VStack {
+            VStack(alignment: .leading) {
+                HStack(alignment: .bottom) {
+                    Text("음악 취향")
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .font(.system(size: 32))
+                    Text("최대 세 개까지 가능해요")
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .font(.system(size: 12))
+                }
+                .padding(.leading, 20)
                 ScrollView {
                     LazyVGrid(columns: [
                         GridItem(.flexible(), spacing: totalSpacing),
@@ -35,11 +46,11 @@ struct MusicPreferenceView: View {
                 
                 VStack {
                     NavigationLink {
-                      //  VideoView()
+                        AnalysisView()
                     } label: {
-                        Text("Next")
-                            .font(.title3)
-                            .fontWeight(.bold)
+                        Text("다음") //idk why
+                            .font(.system(size: 17))
+                            .fontWeight(.semibold)
                             .foregroundColor(.white)
                     }
                     .buttonStyle(PreferenceButtonStyle())
@@ -47,21 +58,13 @@ struct MusicPreferenceView: View {
                 
                 }
                 .frame(height: 80)
-            
             }
-            
-            
-//            VStack {
-//                Spacer()
-//
-//
-//            }
         }
         .navigationBarBackButtonHidden(true)
         .background(Color("Background"))
-        .navigationTitle(
-            Text("음악 취향")
-        )
+//        .navigationTitle(
+//            Text("음악 취향")
+//        )
     }
 }
 

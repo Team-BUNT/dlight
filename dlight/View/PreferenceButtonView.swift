@@ -18,7 +18,6 @@ struct PreferenceButtonView: View {
         
     
             ZStack {
-            
                 Color(.white)
                     
                 Text(text)
@@ -33,7 +32,7 @@ struct PreferenceButtonView: View {
 //                view.overlay(
 //                    RoundedRectangle(cornerRadius: 10)
 //                        .stroke(lineWidth: 1.5)
-//                        .fill(Color("AccentColor"))
+//                        .fill(Color("Primary"))
 //                )
 //            }
             .onTapGesture {

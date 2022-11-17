@@ -64,24 +64,25 @@ struct NewbieView: View {
                 }
                 .padding(.vertical, 80)
             
+                Spacer()
+                
                 VStack {
                     ForEach(0..<3) { index in
                         PreferenceButtonView(text: choice[index], items: $selectedItems)
                     }
                 }
                 
-                Spacer()
+                //  Spacer()
                 
                 NavigationLink {
                     MusicPreferenceView()
                 } label: {
-                    Text("Next")
+                    Text("Next") //idk why
                         .font(.title3)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                 }
                 .buttonStyle(PreferenceButtonStyle())
-    
             }
             .padding(.horizontal, 20)
             .navigationBarHidden(true)
@@ -98,15 +99,15 @@ struct PreferenceButtonStyle: ButtonStyle {
         configuration.label
             .frame(height: 60)
             .frame(maxWidth: .infinity)
-            .background(configuration.isPressed ? Color("AccentColor") : Color("Container"))
+            .background(configuration.isPressed ? Color("Primary") : Color(.white))
             .cornerRadius(10)
 //            .scaleEffect(configuration.isPressed ? 1.3 : 1.0)
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewbieView()
-            .preferredColorScheme(.dark)
-    }
-}
+//
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NewbieView()
+//            .preferredColorScheme(.dark)
+//    }
+//}
