@@ -16,6 +16,7 @@
 		C05CBE0B2926206800B16628 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C05CBE0A2926206800B16628 /* FirebaseFirestoreSwift */; };
 		C05CBE0D2926206800B16628 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C05CBE0C2926206800B16628 /* FirebaseStorage */; };
 		C07EF41429263E4D008A9D6D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41329263E4D008A9D6D /* Video.swift */; };
+		C07EF41629263EDB008A9D6D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EF41529263EDB008A9D6D /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C05CBDFE29261F8600B16628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C05CBE0529261FD600B16628 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C07EF41329263E4D008A9D6D /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		C07EF41529263EDB008A9D6D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C05CBDF729261F8500B16628 /* dlightApp.swift */,
 				C05CBDF929261F8500B16628 /* ContentView.swift */,
 				C07EF41329263E4D008A9D6D /* Video.swift */,
+				C07EF41529263EDB008A9D6D /* Player.swift */,
 				C05CBDFB29261F8600B16628 /* Assets.xcassets */,
 				C05CBDFD29261F8600B16628 /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07EF41629263EDB008A9D6D /* Player.swift in Sources */,
 				C05CBDFA29261F8500B16628 /* ContentView.swift in Sources */,
 				C07EF41429263E4D008A9D6D /* Video.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
