@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		344061442926798200C485E7 /* DancerProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344061432926798200C485E7 /* DancerProfileView.swift */; };
 		34406146292688B400C485E7 /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34406145292688B400C485E7 /* ClassModel.swift */; };
+		3440614C2926945E00C485E7 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3440614B2926945E00C485E7 /* AnalysisView.swift */; };
+		3440614F292694D200C485E7 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 3440614E292694D200C485E7 /* RiveRuntime */; };
+		34406151292695F300C485E7 /* Loading.riv in Resources */ = {isa = PBXBuildFile; fileRef = 34406150292695F300C485E7 /* Loading.riv */; };
 		37A3145129263B9F00ADD884 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145029263B9F00ADD884 /* Safari.swift */; };
 		37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A31458292648A700ADD884 /* OnboardingFirst.swift */; };
 		37A3146029267ADF00ADD884 /* OnbordingSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A3145F29267ADF00ADD884 /* OnbordingSecond.swift */; };
@@ -34,6 +37,8 @@
 /* Begin PBXFileReference section */
 		344061432926798200C485E7 /* DancerProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DancerProfileView.swift; sourceTree = "<group>"; };
 		34406145292688B400C485E7 /* ClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
+		3440614B2926945E00C485E7 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		34406150292695F300C485E7 /* Loading.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Loading.riv; sourceTree = "<group>"; };
 		37A3144F29263B5500ADD884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		37A3145029263B9F00ADD884 /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
 		37A31458292648A700ADD884 /* OnboardingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirst.swift; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05CBE092926206800B16628 /* FirebaseFirestore in Frameworks */,
+				3440614F292694D200C485E7 /* RiveRuntime in Frameworks */,
 				C05CBE0B2926206800B16628 /* FirebaseFirestoreSwift in Frameworks */,
 				C05CBE0D2926206800B16628 /* FirebaseStorage in Frameworks */,
 			);
@@ -69,10 +75,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34406152292695F600C485E7 /* RiveAssets */ = {
+			isa = PBXGroup;
+			children = (
+				34406150292695F300C485E7 /* Loading.riv */,
+			);
+			path = RiveAssets;
+			sourceTree = "<group>";
+		};
 		37A314572926488500ADD884 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				344061432926798200C485E7 /* DancerProfileView.swift */,
+				3440614B2926945E00C485E7 /* AnalysisView.swift */,
 				34406145292688B400C485E7 /* ClassModel.swift */,
 				37A31458292648A700ADD884 /* OnboardingFirst.swift */,
 				37A3145F29267ADF00ADD884 /* OnbordingSecond.swift */,
@@ -116,6 +131,7 @@
 				C05CBE0529261FD600B16628 /* GoogleService-Info.plist */,
 				C05CBDF729261F8500B16628 /* dlightApp.swift */,
 				C07EF41329263E4D008A9D6D /* Video.swift */,
+				34406152292695F600C485E7 /* RiveAssets */,
 				C07EF41F292643F7008A9D6D /* API */,
 				C07EF41D292641DD008A9D6D /* DanceRecommend */,
 				C05CBDFB29261F8600B16628 /* Assets.xcassets */,
@@ -172,6 +188,7 @@
 				C05CBE082926206800B16628 /* FirebaseFirestore */,
 				C05CBE0A2926206800B16628 /* FirebaseFirestoreSwift */,
 				C05CBE0C2926206800B16628 /* FirebaseStorage */,
+				3440614E292694D200C485E7 /* RiveRuntime */,
 			);
 			productName = dlight;
 			productReference = C05CBDF429261F8500B16628 /* dlight.app */;
@@ -203,6 +220,7 @@
 			mainGroup = C05CBDEB29261F8500B16628;
 			packageReferences = (
 				C05CBE072926206800B16628 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3440614D292694D200C485E7 /* XCRemoteSwiftPackageReference "rive-ios" */,
 			);
 			productRefGroup = C05CBDF529261F8500B16628 /* Products */;
 			projectDirPath = "";
@@ -223,6 +241,7 @@
 				C07EF427292650D4008A9D6D /* video2.mp4 in Resources */,
 				C07EF429292650D4008A9D6D /* video1.mp4 in Resources */,
 				C07EF428292650D4008A9D6D /* video3.mp4 in Resources */,
+				34406151292695F300C485E7 /* Loading.riv in Resources */,
 				C05CBE0629261FD600B16628 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +260,7 @@
 				C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */,
 				C07EF41829263F39008A9D6D /* PlayerView.swift in Sources */,
 				37A3146029267ADF00ADD884 /* OnbordingSecond.swift in Sources */,
+				3440614C2926945E00C485E7 /* AnalysisView.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
 				344061442926798200C485E7 /* DancerProfileView.swift in Sources */,
 				C07EF42329264B31008A9D6D /* FirestoreService.swift in Sources */,
@@ -454,6 +474,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3440614D292694D200C485E7 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		C05CBE072926206800B16628 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -465,6 +493,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3440614E292694D200C485E7 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3440614D292694D200C485E7 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
 		C05CBE082926206800B16628 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C05CBE072926206800B16628 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
