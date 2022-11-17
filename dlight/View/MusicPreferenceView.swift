@@ -7,10 +7,37 @@
 
 import SwiftUI
 
-enum MusicGenre : CaseIterable {
-    case KPOP, BOOMBAP, EDM, JAZZ
+enum MusicGenre: String, CaseIterable, Equatable {
+    case Boombap
+    case RnB
+    case Trap
+    case KPOP
+    case POP
+    case Rock
+    case Funk
+    case Indy
+    case EDM
+    case Jazz
+    
+    var koreanText: String {
+        switch self {
+        case .Trap:
+            return "트랩"
+        case .Boombap:
+            return "붐뱁"
+        case .Rock:
+            return "락"
+        case .Indy:
+            return "인디"
+        case .RnB:
+            return "R&B"
+        case .Jazz:
+            return "재즈"
+        default:
+            return self.rawValue
+        }
+    }
 }
-
 struct MusicPreferenceView: View {
     //간격 한번에 설정하기 위한 변수
     var totalSpacing: CGFloat = 20

@@ -53,20 +53,20 @@ struct MusicButtonView: View {
         .aspectRatio(16 / 14, contentMode: .fit)
         .background(Color("Indicators"))
         .cornerRadius(10)
-        .if(items.contains(item)) { view in
-            view.overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(lineWidth: 1.5)
-                    .fill(Color("AccentColor"))
-            )
-        }
+//        .if(items.contains(item)) { view in
+//            view.overlay(
+//                RoundedRectangle(cornerRadius: 10)
+//                    .stroke(lineWidth: 1.5)
+//                    .fill(Color("AccentColor"))
+//            )
+//        }
     }
 }
 
 
 struct MusicButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        MusicButtonView(item: .BOOMBAP, items: .constant([]))
+        MusicButtonView(item: .Boombap, items: .constant([]))
             .frame(width: 180, height: 160)
             .previewLayout(.sizeThatFits)
             
