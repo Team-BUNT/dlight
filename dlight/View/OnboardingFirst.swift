@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnboradingFirst: View {
     
-    @Binding var isFirstLaunching: Bool
+    @Binding var isPresented: Bool
     
     var body: some View {
         NavigationView {
@@ -25,7 +25,7 @@ struct OnboradingFirst: View {
                     Spacer()
                     
                     NavigationLink(destination: {
-                        OnbordingSecond( isFirstLaunching: $isFirstLaunching)
+                        OnbordingSecond( isPresented: $isPresented)
                     }, label: {
                         ZStack {
                             RoundedRectangle(cornerRadius: 14)
@@ -39,7 +39,7 @@ struct OnboradingFirst: View {
                     .padding(.bottom, 17)
                     
                     NavigationLink(destination: {
-                        NewbieView(isFirstLaunching: $isFirstLaunching)
+                        NewbieView(isFirstLaunching: $isPresented)
                         //EmptyView()
                     }, label: {
                         ZStack {
@@ -62,6 +62,6 @@ struct OnboradingFirst: View {
 
 struct OnboradingFirst_Previews: PreviewProvider {
     static var previews: some View {
-        OnboradingFirst(isFirstLaunching: .constant(true))
+        OnboradingFirst(isPresented: .constant(true))
     }
 }

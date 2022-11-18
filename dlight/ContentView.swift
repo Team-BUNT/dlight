@@ -15,7 +15,7 @@ struct ContentView: View {
         
         DanceRecommendView()
             .fullScreenCover(isPresented: $isFirstLaunching) {
-                OnboradingFirst(isFirstLaunching: $isFirstLaunching)
+                OnboradingFirst(isPresented: $isFirstLaunching)
             }
     }
 }

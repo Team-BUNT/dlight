@@ -75,7 +75,7 @@ struct NewbieView: View {
            NavigationLink {
                MusicPreferenceView(isFirstLaunching: $isFirstLaunching)
                 } label: {
-                    Text("Next") //idk why
+                    Text("다음") //idk why
                         .font(.title3)
                         .fontWeight(.bold)
                         .foregroundColor(.black)

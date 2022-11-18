@@ -10,7 +10,7 @@ import SwiftUI
 struct OnbordingSecond: View {
     @Environment(\.dismiss) var dismiss
     
-    @Binding var isFirstLaunching: Bool
+    @Binding var isPresented: Bool
     
     @State var selectedNum: Int = 0
     let styleData: [[String]] = [
@@ -49,7 +49,8 @@ struct OnbordingSecond: View {
                 
                 Button(action: {
                     // 여기에 시트변수 토글
-                    isFirstLaunching = false
+                    isPresented = false
+                    dismiss()
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 14)
@@ -115,6 +116,6 @@ struct CapsuleView: View {
 
 struct OnbordingSecond_Previews: PreviewProvider {
     static var previews: some View {
-        OnbordingSecond(isFirstLaunching: .constant(true))
+        OnbordingSecond(isPresented: .constant(true))
     }
 }
