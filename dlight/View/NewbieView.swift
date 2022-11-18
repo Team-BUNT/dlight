@@ -43,6 +43,8 @@ enum MusicGenre: String, CaseIterable, Equatable {
 import SwiftUI
 
 struct NewbieView: View {
+    
+    @Binding var isFirstLaunching: Bool
 
     let choice = ["음악을 듣고 가볍게 리듬을 타고 싶어서", "친구들과 영상을 찍기위해", "멋진 무대에서 공연해보고 싶어서"]
 
@@ -66,12 +68,12 @@ struct NewbieView: View {
 
                 VStack {
                     ForEach(0..<3) { index in
-                        PreferenceButtonView(text: choice[index], items: $selectedItems)
+                        PreferenceButtonView(isFirstLaunching: $isFirstLaunching, text: choice[index], items: $selectedItems)
                     }
                 }
                 Spacer()
            NavigationLink {
-                    MusicPreferenceView()
+               MusicPreferenceView(isFirstLaunching: $isFirstLaunching)
                 } label: {
                     Text("Next") //idk why
                         .font(.title3)

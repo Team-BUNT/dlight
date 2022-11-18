@@ -9,6 +9,9 @@ import SwiftUI
 import RiveRuntime
 
 struct AnalysisView: View {
+    
+    @Binding var isFirstLaunching: Bool
+    
     var body: some View {
         ZStack {
             Color("Background").ignoresSafeArea()
@@ -24,12 +27,17 @@ struct AnalysisView: View {
             }
             .navigationBarBackButtonHidden(true)
         }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                self.isFirstLaunching = false
+            }
+        }
     }
 }
 
 
 struct AnalysisView_Previews: PreviewProvider {
     static var previews: some View {
-        AnalysisView()
+        AnalysisView(isFirstLaunching: .constant(true))
     }
 }

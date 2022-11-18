@@ -25,9 +25,7 @@ struct dlightApp: App {
 
   var body: some Scene {
     WindowGroup {
-      NavigationView {
-        OnboradingFirst()
-      }
+        ContentView()
     }
   }
 }

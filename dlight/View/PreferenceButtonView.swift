@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct PreferenceButtonView: View {
+    
+    @Binding var isFirstLaunching: Bool
 
     let text: String
 
@@ -54,7 +56,7 @@ struct PreferenceButtonView: View {
 
 struct PreferenceButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        PreferenceButtonView(text: "친구들과 영상을 찍기 위해", items: .constant([]))
+        PreferenceButtonView(isFirstLaunching: .constant(true), text: "친구들과 영상을 찍기 위해", items: .constant([]))
             .previewLayout(.sizeThatFits)
     }
 }

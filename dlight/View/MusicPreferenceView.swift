@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct MusicPreferenceView: View {
+    
+    @Binding var isFirstLaunching: Bool
     //간격 한번에 설정하기 위한 변수
     var totalSpacing: CGFloat = 20
 
@@ -46,7 +48,7 @@ struct MusicPreferenceView: View {
 
                 VStack {
                     NavigationLink {
-                        AnalysisView()
+                        AnalysisView(isFirstLaunching: $isFirstLaunching)
                     } label: {
                         Text("다음") //idk why
                             .font(.system(size: 17))
@@ -77,7 +79,7 @@ struct MusicPreferenceView: View {
 struct MusicPreferenceView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MusicPreferenceView()
+            MusicPreferenceView(isFirstLaunching: .constant(true))
                 .preferredColorScheme(.dark)
         }
     }
