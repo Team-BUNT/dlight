@@ -54,7 +54,7 @@ struct MusicPreferenceView: View {
                             .font(.system(size: 17))
                             .fontWeight(.semibold)
 
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                     }
                     .buttonStyle(PreferenceButtonStyle())
                     .padding(.horizontal, 20)

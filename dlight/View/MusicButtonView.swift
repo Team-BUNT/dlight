@@ -54,13 +54,13 @@ struct MusicButtonView: View {
         .aspectRatio(16 / 14, contentMode: .fit)
         .background(Color("Indicators"))
         .cornerRadius(10)
-//        .if(items.contains(item)) { view in
-//            view.overlay(
-//                RoundedRectangle(cornerRadius: 10)
-//                    .stroke(lineWidth: 1.5)
-//                    .fill(Color("AccentColor"))
-//            )
-//        }
+        .if(items.contains(item)) { view in
+            view.overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(lineWidth: 1.5)
+                    .fill(Color("AccentColor"))
+            )
+        }
     }
 }
 

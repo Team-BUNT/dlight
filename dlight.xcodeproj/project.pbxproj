@@ -38,6 +38,10 @@
 		C07EF428292650D4008A9D6D /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C07EF425292650D4008A9D6D /* video3.mp4 */; };
 		C07EF429292650D4008A9D6D /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C07EF426292650D4008A9D6D /* video1.mp4 */; };
 		C0BA73E0292708D3008B7508 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA73DF292708D3008B7508 /* ContentView.swift */; };
+		C0BA73E329270C84008B7508 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA73E229270C84008B7508 /* View.swift */; };
+		C0BA73E729270E78008B7508 /* video6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C0BA73E429270E77008B7508 /* video6.mp4 */; };
+		C0BA73E829270E78008B7508 /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C0BA73E529270E77008B7508 /* video4.mp4 */; };
+		C0BA73E929270E78008B7508 /* video5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C0BA73E629270E78008B7508 /* video5.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +74,10 @@
 		C07EF425292650D4008A9D6D /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
 		C07EF426292650D4008A9D6D /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
 		C0BA73DF292708D3008B7508 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C0BA73E229270C84008B7508 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		C0BA73E429270E77008B7508 /* video6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video6.mp4; sourceTree = "<group>"; };
+		C0BA73E529270E77008B7508 /* video4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video4.mp4; sourceTree = "<group>"; };
+		C0BA73E629270E78008B7508 /* video5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video5.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,9 @@
 				C07EF426292650D4008A9D6D /* video1.mp4 */,
 				C07EF424292650D4008A9D6D /* video2.mp4 */,
 				C07EF425292650D4008A9D6D /* video3.mp4 */,
+				C0BA73E529270E77008B7508 /* video4.mp4 */,
+				C0BA73E629270E78008B7508 /* video5.mp4 */,
+				C0BA73E429270E77008B7508 /* video6.mp4 */,
 				C05CBDF629261F8500B16628 /* dlight */,
 				C05CBDF529261F8500B16628 /* Products */,
 			);
@@ -142,6 +153,7 @@
 		C05CBDF629261F8500B16628 /* dlight */ = {
 			isa = PBXGroup;
 			children = (
+				C0BA73E129270C72008B7508 /* Extension */,
 				37A314612926818700ADD884 /* Helper */,
 				37A314572926488500ADD884 /* View */,
 				37A3144F29263B5500ADD884 /* Info.plist */,
@@ -184,6 +196,14 @@
 				C07EF42229264B31008A9D6D /* FirestoreService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		C0BA73E129270C72008B7508 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA73E229270C84008B7508 /* View.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,9 +277,12 @@
 				C05CBDFF29261F8600B16628 /* Preview Assets.xcassets in Resources */,
 				C05CBDFC29261F8600B16628 /* Assets.xcassets in Resources */,
 				C07EF427292650D4008A9D6D /* video2.mp4 in Resources */,
+				C0BA73E929270E78008B7508 /* video5.mp4 in Resources */,
 				C07EF429292650D4008A9D6D /* video1.mp4 in Resources */,
 				C07EF428292650D4008A9D6D /* video3.mp4 in Resources */,
 				34406151292695F300C485E7 /* Loading.riv in Resources */,
+				C0BA73E829270E78008B7508 /* video4.mp4 in Resources */,
+				C0BA73E729270E78008B7508 /* video6.mp4 in Resources */,
 				C05CBE0629261FD600B16628 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +314,7 @@
 				C07EF42129264415008A9D6D /* FireStorageService.swift in Sources */,
 				37A3145129263B9F00ADD884 /* Safari.swift in Sources */,
 				C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */,
+				C0BA73E329270C84008B7508 /* View.swift in Sources */,
 				37A31459292648A700ADD884 /* OnboardingFirst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

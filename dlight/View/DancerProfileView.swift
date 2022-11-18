@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DancerProfileView: View {
     @StateObject var classViewModel = ClassViewModel()
+    @Binding var index: Int
+    
     let tags = ["가벼운", "세련된", "절제된"]
     
     var body: some View {
@@ -43,7 +45,7 @@ struct DancerProfileView: View {
             VStack(alignment: .leading, spacing: 12) {
                 // Name & Genre
                 HStack(alignment: .bottom, spacing: 2) {
-                    Text("Name")
+                    Text("Name\(index)")
                         .font(.system(size: 28, weight: .semibold))
                         .foregroundColor(Color.white)
                         .tracking(-0.41)
@@ -154,7 +156,7 @@ struct ClassRow: View {
 
 struct DancerProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        DancerProfileView()
+        DancerProfileView( index: .constant(0))
         ClassRow()
             .previewLayout(.sizeThatFits)
     }

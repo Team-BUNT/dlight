@@ -10,7 +10,7 @@ import AVKit
 
 struct Video : Identifiable {
     
-    var id : String
+    var id : Int
     var player : AVPlayer
     var replay : Bool = true
     

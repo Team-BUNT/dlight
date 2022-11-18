@@ -11,6 +11,7 @@ import AVKit
 struct PlayerScrollView : UIViewRepresentable {
     
     @Binding var data : [Video]
+    @Binding var index: Int
     
     
     func makeUIView(context: Context) -> UIScrollView{
@@ -83,8 +84,8 @@ struct PlayerScrollView : UIViewRepresentable {
                 
                 // playing next video...
                 
+                parent.index = index
                 parent.data[index].player.play()
-                
                 parent.data[index].player.actionAtItemEnd = .none
                 
                 NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: parent.data[index].player.currentItem, queue: .main) { (_) in

@@ -29,7 +29,7 @@ struct AnalysisView: View {
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//                self.isFirstLaunching = false
+                self.isFirstLaunching = false
             }
         }
     }

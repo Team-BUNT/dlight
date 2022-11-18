@@ -49,7 +49,7 @@ struct OnbordingSecond: View {
                 
                 Button(action: {
                     // 여기에 시트변수 토글
-//                    isFirstLaunching = false
+                    isFirstLaunching = false
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 14)

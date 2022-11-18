@@ -30,13 +30,13 @@ struct PreferenceButtonView: View {
             }
             .frame(height: 60)
             .cornerRadius(10)
-//            .if(items.contains(text)) { view in
-//                view.overlay(
-//                    RoundedRectangle(cornerRadius: 10)
-//                        .stroke(lineWidth: 1.5)
-//                        .fill(Color("Primary"))
-//                )
-//            }
+            .if(items.contains(text)) { view in
+                view.overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .fill(Color("Primary"))
+                )
+            }
             .onTapGesture {
                 if items.contains(text) {
                     items.removeAll()
