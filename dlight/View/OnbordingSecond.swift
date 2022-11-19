@@ -91,6 +91,7 @@ struct CapsuleView: View {
     
     var body: some View {
         Text(title)
+            .foregroundColor(isSelected ? .white : Color("Background"))
             .font(.system(size: 17, weight: .semibold))
             .padding(.horizontal, 16)
             .padding(.vertical, 8)

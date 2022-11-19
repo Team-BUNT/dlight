@@ -10,31 +10,27 @@ import AVKit
 
 struct DanceRecommendView: View {
     
-    @State var index = 0
-    @State var top = 0
-    @State var isShowStyleView = false {
-        didSet {
-            if isShowStyleView == false {
-                
-            }
-        }
-    }
-    
-    @State var data: [Video] = [
-        Video(id: 0, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video1", ofType: "mp4")!)), replay: false),
-        Video(id: 1, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video2", ofType: "mp4")!)), replay: false),
-        Video(id: 2, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video2", ofType: "mp4")!)), replay: false),
-        Video(id: 3, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video3", ofType: "mp4")!)), replay: false),
-        Video(id: 4, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video4", ofType: "mp4")!)), replay: false),
-        Video(id: 5, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video5", ofType: "mp4")!)), replay: false),
-        Video(id: 6, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video6", ofType: "mp4")!)), replay: false),
-    ]
+    @StateObject var vm = DanceRecommendViewModel()
     
     var body: some View {
         NavigationView {
             ZStack {
                 
-                PlayerScrollView(data: self.$data, index: self.$index)
+                PlayerScrollView(data: $vm.data, index: $vm.index)
+                
+                VStack {
+                    
+                    Spacer()
+                    
+                    Rectangle()
+                        .fill(LinearGradient(
+                            gradient: Gradient(stops: [
+                                .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)), location: 0),
+                                .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), location: 1)]),
+                            startPoint: UnitPoint(x: 0.5, y: -3.0616171314629196e-17),
+                            endPoint: UnitPoint(x: 0.5, y: 0.9999999999999999)))
+                        .frame(height: 300)
+                }
                 
                 VStack {
                     
@@ -44,7 +40,7 @@ struct DanceRecommendView: View {
                         
                         Button {
                             //스타일 시트
-                            isShowStyleView.toggle()
+                            vm.isShowStyleView.toggle()
                         } label: {
                             Text("스타일 다시 정하기")
                                 .foregroundColor(.white)
@@ -67,12 +63,10 @@ struct DanceRecommendView: View {
                         Text("루크")
                             .foregroundColor(.white)
                         
-                        
                         Spacer()
                         
-                        
                         NavigationLink {
-                            DancerProfileView(index: $index)
+                            DancerProfileView(index: $vm.index)
                         } label: {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 14)
@@ -95,12 +89,13 @@ struct DanceRecommendView: View {
             }
             .edgesIgnoringSafeArea(.all)
             .onAppear {
-                self.data.shuffle()
+                vm.data.shuffle()
             }
         }
-        .fullScreenCover(isPresented: $isShowStyleView) {
-            OnbordingSecond(isPresented: $isShowStyleView)
+        .fullScreenCover(isPresented: $vm.isShowStyleView) {
+            OnbordingSecond(isPresented: $vm.isShowStyleView)
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

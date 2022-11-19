@@ -13,19 +13,8 @@ struct Video : Identifiable {
     var id : Int
     var player : AVPlayer
     var replay : Bool = true
-    
-//    init() {
-//
-//    }
-//
-//    init(model: DanceVideo) {
-//        self.id = model.ID
-//
-//        let manager = FireStorageService()
-////        manager.requestVideoURL(videoID: model.ID) { url in
-////            self.player = AVPlayer(url: url)
-////        }
-//    }
+    var bpm : Int
+
 }
 
 struct DanceVideo: Codable {

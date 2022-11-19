@@ -43,7 +43,7 @@ struct PlayerScrollView : UIViewRepresentable {
         
         // to dynamically update height based on data...
         
-        uiView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat((data.count)))
+        uiView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat((data.count)) * 1.1)
         
         for i in 0..<uiView.subviews.count{
             
