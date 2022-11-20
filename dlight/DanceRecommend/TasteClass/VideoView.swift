@@ -23,7 +23,7 @@ import UIKit
 struct VideoView: View {
     @StateObject private var viewModel = PlayerViewModel()
     
-    @State var like: Float = 0
+    var video: Video = Video(id: 0, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Nema", ofType: "mp4")!)), replay: false, bpm: 153, startTime: 7.2)
     
     var body: some View {
         ZStack {
@@ -38,8 +38,12 @@ struct VideoView: View {
                         return }
                     //로컬 url
                     let url = URL(fileURLWithPath: path)
-                    
+
+
                     viewModel.setCurrentItem(AVPlayerItem(url: url))
+                    
+                    
+//                    viewModel.player = video.player
                     viewModel.player.play()
                     
                 }
@@ -49,7 +53,11 @@ struct VideoView: View {
 //
 //            CustomControlsView(playerVM: viewModel)
 //                .frame(width: 300, height: 100)
-
+            if viewModel.isHide {
+                Rectangle()
+                    .opacity(0.9)
+                    .ignoresSafeArea()
+            }
             
             VStack {
                 
@@ -72,19 +80,45 @@ struct VideoView: View {
                         
                         ForEach(1..<5) { index in
                             Rectangle()
-                                .fill(Color.white)
+                                .fill(index <= viewModel.rhythmCount ? Color("Primary") : Color.white)
                                 .frame(width: 32, height: 3)
+                                .if(viewModel.rhythmCount == index) { view in
+                                    view.foregroundColor(Color("Primary"))
+                                }
                             
-                            Circle()
-                                .fill(Color.white)
-                                .frame(width: 60)
-                                .overlay( Text("\(index)")
+                            ZStack {
+                                Circle()
+                                    .fill(Color.white)
+                                    
+                                if index <= viewModel.rhythmCount {
+                                    Circle()
+                                        .stroke(lineWidth: 4)
+                                        .foregroundColor(Color("Primary"))
+                                }
+                                
+                                
+                                Text("\(index)")
                                     .fontWeight(.semibold)
                                     .font(.system(size: 20))
-                                )
-                                .onTapGesture {
-                                    seekTo(index: index)
-                                }
+                            }
+                            .frame(width: 60)
+                            .onTapGesture {
+                                viewModel.rhythmCount = index
+                                seekTo(index: index)
+                                print("wow")
+                            }
+                            
+//                            Circle()
+//                                .fill(Color.white)
+//                                .frame(width: 60)
+//                                .overlay( Text("\(index)")
+//                                    .fontWeight(.semibold)
+//                                    .font(.system(size: 20))
+//                                )
+//                                .onTapGesture {
+//                                    seekTo(index: index)
+//                                    print("wow")
+//                                }
                         }
                     }
                 }
@@ -98,6 +132,8 @@ struct VideoView: View {
     
     func seekTo(index: Int) {
         print("Lets go to \(index)")
+//        let time = 7.2 + (60 / 153) * (index - 0.5)
+        viewModel.playTime = 7.2 - (60 / 153)
     }
 }
 

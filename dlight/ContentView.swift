@@ -13,10 +13,12 @@ struct ContentView: View {
     
     var body: some View {
         
-        DanceRecommendView()
-            .fullScreenCover(isPresented: $isFirstLaunching) {
-                OnboradingFirst(isPresented: $isFirstLaunching)
-            }
+//        DanceRecommendView()
+//            .fullScreenCover(isPresented: $isFirstLaunching) {
+//                OnboradingFirst(isPresented: $isFirstLaunching)
+//            }
+        
+        VideoView()
     }
 }
 

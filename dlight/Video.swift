@@ -13,7 +13,8 @@ struct Video : Identifiable {
     var id : Int
     var player : AVPlayer
     var replay : Bool = true
-    var bpm : Int
+    var bpm : Double
+    var startTime: Double
 
 }
 

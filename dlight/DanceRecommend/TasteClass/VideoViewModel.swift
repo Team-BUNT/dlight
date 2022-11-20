@@ -16,6 +16,9 @@ final class PlayerViewModel: ObservableObject {
     @Published var isEditingCurrentTime = false
     @Published var currentTime: Double = .zero
     @Published var duration: Double?
+    @Published var playTime: Double = .zero
+    @Published var isHide: Bool = false
+    @Published var rhythmCount: Int = 1
     
     private var subscriptions: Set<AnyCancellable> = []
     private var timeObserver: Any?
@@ -26,7 +29,21 @@ final class PlayerViewModel: ObservableObject {
         }
     }
     
+    var timeObserverToken: Any?
+    
     init() {
+        
+        $playTime
+            .sink { [weak self] time in
+                guard let self = self else { return }
+                self.player.seek(to: CMTime(seconds: time, preferredTimescale: 1), toleranceBefore: .zero, toleranceAfter: .zero)
+                if self.player.rate != 0 {
+                    self.player.play()
+                    self.isHide = false
+                }
+            }
+            .store(in: &subscriptions)
+        
         //파일 경로 탐색
         
         $isEditingCurrentTime
@@ -57,10 +74,21 @@ final class PlayerViewModel: ObservableObject {
             }
             .store(in: &subscriptions)
         
-        timeObserver = player.addPeriodicTimeObserver(forInterval: CMTime(seconds: 0.2, preferredTimescale: 600), queue: .main) { [weak self] time in
+        timeObserver = player.addPeriodicTimeObserver(forInterval: CMTime(seconds: 0.1, preferredTimescale: 600), queue: .main) { [weak self] time in
             guard let self = self else { return }
-            if self.isEditingCurrentTime == false {
-                self.currentTime = time.seconds
+//            if self.isEditingCurrentTime == false {
+//                self.currentTime = time.seconds
+//            }
+            
+            print("hey now is \(time.seconds)")
+            if time.seconds > 10 {
+                self.isHide = false
+                self.playTime = 7.2
+                
+            }
+            
+            if time.seconds > 9 {
+                self.isHide = true
             }
         }
     }
@@ -77,4 +105,26 @@ final class PlayerViewModel: ObservableObject {
             })
             .store(in: &subscriptions)
     }
+    
+    
+//    func addBoundaryTimeObserver() {
+//
+//        // Divide the asset's duration into quarters.
+//        let interval = CMTimeMultiplyByFloat64(player.currentItem?.asset.duration, 0.0.1)
+//        var currentTime = CMTime.zero
+//        var times = [NSValue]()
+//
+//        // Calculate boundary times
+//        while currentTime < asset.duration {
+//            currentTime = currentTime + interval
+//            times.append(NSValue(time:currentTime))
+//        }
+//
+//        timeObserverToken = player.addBoundaryTimeObserver(forTimes: times,
+//                                                           queue: .main) {
+//            // Update UI
+//
+//            if times.last ==
+//        }
+//    }
 }
