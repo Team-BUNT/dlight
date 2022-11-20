@@ -36,6 +36,17 @@ struct DanceRecommendView: View {
                     
                     HStack {
                         
+                        NavigationLink {
+//                            VideoView(video: vm)
+                        } label: {
+                            Text("체험해보기")
+                                .foregroundColor(.white)
+                                .fontWeight(.bold)
+                                .shadow(radius: 10)
+                        }
+                        .padding(.leading)
+
+                        
                         Spacer()
                         
                         Button {

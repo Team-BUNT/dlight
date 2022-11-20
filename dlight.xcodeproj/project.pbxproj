@@ -27,9 +27,7 @@
 		C01D1A7C2929195800D9E3E1 /* Sun-J.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C01D1A7A2929195800D9E3E1 /* Sun-J.mp4 */; };
 		C01D1A7F292919D200D9E3E1 /* Chocobi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C01D1A7D292919D200D9E3E1 /* Chocobi.mp4 */; };
 		C01D1A80292919D200D9E3E1 /* BrotherBin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C01D1A7E292919D200D9E3E1 /* BrotherBin.mp4 */; };
-		C01D1A8329291B4800D9E3E1 /* TasteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D1A8229291B4800D9E3E1 /* TasteView.swift */; };
 		C01D1A8729291BAE00D9E3E1 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D1A8429291BAE00D9E3E1 /* CustomVideoPlayer.swift */; };
-		C01D1A8829291BAE00D9E3E1 /* CustomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D1A8529291BAE00D9E3E1 /* CustomControlView.swift */; };
 		C01D1A8929291BAE00D9E3E1 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D1A8629291BAE00D9E3E1 /* VideoView.swift */; };
 		C01D1A8B29291BB900D9E3E1 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D1A8A29291BB900D9E3E1 /* VideoViewModel.swift */; };
 		C05CBDF829261F8500B16628 /* dlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CBDF729261F8500B16628 /* dlightApp.swift */; };
@@ -72,9 +70,7 @@
 		C01D1A7A2929195800D9E3E1 /* Sun-J.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sun-J.mp4"; sourceTree = "<group>"; };
 		C01D1A7D292919D200D9E3E1 /* Chocobi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chocobi.mp4; sourceTree = "<group>"; };
 		C01D1A7E292919D200D9E3E1 /* BrotherBin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrotherBin.mp4; sourceTree = "<group>"; };
-		C01D1A8229291B4800D9E3E1 /* TasteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteView.swift; sourceTree = "<group>"; };
 		C01D1A8429291BAE00D9E3E1 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
-		C01D1A8529291BAE00D9E3E1 /* CustomControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomControlView.swift; sourceTree = "<group>"; };
 		C01D1A8629291BAE00D9E3E1 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		C01D1A8A29291BB900D9E3E1 /* VideoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		C05CBDF429261F8500B16628 /* dlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,11 +141,9 @@
 		C01D1A8129291AE900D9E3E1 /* TasteClass */ = {
 			isa = PBXGroup;
 			children = (
-				C01D1A8A29291BB900D9E3E1 /* VideoViewModel.swift */,
-				C01D1A8529291BAE00D9E3E1 /* CustomControlView.swift */,
 				C01D1A8429291BAE00D9E3E1 /* CustomVideoPlayer.swift */,
 				C01D1A8629291BAE00D9E3E1 /* VideoView.swift */,
-				C01D1A8229291B4800D9E3E1 /* TasteView.swift */,
+				C01D1A8A29291BB900D9E3E1 /* VideoViewModel.swift */,
 			);
 			path = TasteClass;
 			sourceTree = "<group>";
@@ -330,8 +324,6 @@
 				C07EF41C29264039008A9D6D /* PlayerScrollView.swift in Sources */,
 				C0BA73EB2927148D008B7508 /* DancerRecommendViewModel.swift in Sources */,
 				C07EF41629263EDB008A9D6D /* Player.swift in Sources */,
-				C01D1A8329291B4800D9E3E1 /* TasteView.swift in Sources */,
-				C01D1A8829291BAE00D9E3E1 /* CustomControlView.swift in Sources */,
 				C07EF41429263E4D008A9D6D /* Video.swift in Sources */,
 				AEA2153A2926A03500B5F878 /* MusicPreferenceView.swift in Sources */,
 				C07EF41A29263FB6008A9D6D /* DanceRecommendView.swift in Sources */,

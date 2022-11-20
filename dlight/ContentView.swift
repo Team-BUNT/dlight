@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
     
@@ -18,7 +19,7 @@ struct ContentView: View {
 //                OnboradingFirst(isPresented: $isFirstLaunching)
 //            }
         
-        VideoView()
+        VideoView(video:  Video(id: 0, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Nema", ofType: "mp4")!)), replay: false, bpm: 153, startTime: 7.2))
     }
 }
 
