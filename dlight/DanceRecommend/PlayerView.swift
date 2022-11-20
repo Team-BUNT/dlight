@@ -15,7 +15,7 @@ struct PlayerView : View {
         
         VStack(spacing: 0){
             
-            ForEach(0..<self.data.count){i in
+            ForEach(0..<self.data.count){ i in
                 
                 ZStack{
                     

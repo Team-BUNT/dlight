@@ -11,6 +11,8 @@ import AVKit
 struct Video : Identifiable {
     
     var id : Int
+    var dancerName: String
+    var tag: [String]
     var player : AVPlayer
     var replay : Bool = true
     var bpm : Double

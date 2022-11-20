@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DancerProfileView: View {
     @StateObject var classViewModel = ClassViewModel()
-    @Binding var index: Int
+    var video: Video
     
     let tags = ["가벼운", "세련된", "절제된"]
     
@@ -36,16 +36,16 @@ struct DancerProfileView: View {
     func information() -> some View {
         HStack(alignment: .bottom, spacing: 11) {
             // Image
-            Image("Dancer")
+            Image(video.dancerName)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 125, height: 125)
+                .frame(width: 110, height: 110)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
             
             VStack(alignment: .leading, spacing: 12) {
                 // Name & Genre
                 HStack(alignment: .bottom, spacing: 2) {
-                    Text("Name\(index)")
+                    Text(video.dancerName)
                         .font(.system(size: 28, weight: .semibold))
                         .foregroundColor(Color.white)
                         .tracking(-0.41)
@@ -58,7 +58,7 @@ struct DancerProfileView: View {
                 
                 // Tags
                 HStack(spacing: 8) {
-                    ForEach(tags, id: \.self) { tag in
+                    ForEach(video.tag, id: \.self) { tag in
                         Tag(tagString: tag)
                     }
                 }
@@ -154,10 +154,10 @@ struct ClassRow: View {
     }
 }
 
-struct DancerProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        DancerProfileView( index: .constant(0))
-        ClassRow()
-            .previewLayout(.sizeThatFits)
-    }
-}
+//struct DancerProfileView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DancerProfileView(dancerName: "Nema")
+//        ClassRow()
+//            .previewLayout(.sizeThatFits)
+//    }
+//}

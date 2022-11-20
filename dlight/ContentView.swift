@@ -14,12 +14,12 @@ struct ContentView: View {
     
     var body: some View {
         
-//        DanceRecommendView()
-//            .fullScreenCover(isPresented: $isFirstLaunching) {
-//                OnboradingFirst(isPresented: $isFirstLaunching)
-//            }
+        DanceRecommendView()
+            .fullScreenCover(isPresented: $isFirstLaunching) {
+                OnboradingFirst(isPresented: $isFirstLaunching)
+            }
         
-        VideoView(video:  Video(id: 0, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Nema", ofType: "mp4")!)), replay: false, bpm: 153, startTime: 7.2))
+//        VideoView(video:  Video(id: 1, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Dora", ofType: "mp4")!)), replay: false, bpm: 112, startTime: 6.2))
     }
 }
 

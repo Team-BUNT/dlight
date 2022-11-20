@@ -23,8 +23,9 @@ struct VideoView: View {
         ZStack {
             
             CustomVideoPlayer(playerVM: viewModel)
-                .scaledToFill()
                 .ignoresSafeArea(edges: .vertical)
+                .scaledToFill()
+
                 .onAppear {
                     viewModel.player.play()
                 }
@@ -32,23 +33,16 @@ struct VideoView: View {
                     viewModel.player.pause()
                 }
             
-            
-            if viewModel.isHide {
+            VStack {
                 ZStack {
                     Rectangle()
-                        .opacity(0.95)
-                    .ignoresSafeArea()
-                    
-                    Text("\(Int(viewModel.currentCount) - 2)")
-                        .font(.largeTitle.bold())
-                        .foregroundColor(.white)
-                }
-            }
-            
-            VStack {
-                
-                HStack {
-                    Spacer()
+                        .fill(LinearGradient(
+                                gradient: Gradient(stops: [
+                            .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)), location: 0),
+                            .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), location: 1)]),
+                                startPoint: UnitPoint(x: 0.5, y: 0.8),
+                                endPoint: UnitPoint(x: 0.5, y: -3.0616171314629196e-2)))
+                    .frame(height: 150)
                     
                     Button {
                         viewModel.changePlayRate()
@@ -59,7 +53,6 @@ struct VideoView: View {
                             .shadow(color: .black, radius: 10)
                     }
                 }
-                .frame(width: 360, height: 100)
                 
                 Spacer()
                 
@@ -97,8 +90,8 @@ struct VideoView: View {
                                             .foregroundColor(Color("Primary"))
                                     }
                                     
-                                    
                                     Text("\(index)")
+                                        .foregroundColor(.black)
                                         .fontWeight(.semibold)
                                         .font(.system(size: 20))
                                 }
@@ -114,15 +107,19 @@ struct VideoView: View {
                 }
                 .frame(height: 100)
                 .padding(.bottom, 20)
+                
             }
-            .padding(.vertical)
+            .ignoresSafeArea(edges: .vertical)
+            .padding(.bottom)
         }
-        .navigationBarHidden(true)
+        .preferredColorScheme(.dark) // white tint on status bar
+        
+//        .navigationBarHidden(true)
     }
 }
 
 struct VideoView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoView(video:  Video(id: 0, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Nema", ofType: "mp4")!)), replay: false, bpm: 153, startTime: 7.2) )
+        VideoView(video:  Video(id: 0, dancerName: "Nema", tag: ["화려한"], player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Nema", ofType: "mp4")!)), replay: false, bpm: 153, startTime: 7.2) )
     }
 }
