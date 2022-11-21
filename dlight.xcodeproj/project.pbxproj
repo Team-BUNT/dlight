@@ -131,9 +131,9 @@
 		C01D1A8129291AE900D9E3E1 /* TasteClass */ = {
 			isa = PBXGroup;
 			children = (
-				C01D1A8429291BAE00D9E3E1 /* CustomVideoPlayer.swift */,
 				C01D1A8629291BAE00D9E3E1 /* VideoView.swift */,
 				C01D1A8A29291BB900D9E3E1 /* VideoViewModel.swift */,
+				C01D1A8429291BAE00D9E3E1 /* CustomVideoPlayer.swift */,
 			);
 			path = TasteClass;
 			sourceTree = "<group>";

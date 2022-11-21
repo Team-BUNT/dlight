@@ -21,7 +21,7 @@ struct VideoView: View {
     
     var body: some View {
         ZStack {
-            
+            //MARK: - Video
             CustomVideoPlayer(playerVM: viewModel)
                 .ignoresSafeArea(edges: .vertical)
                 .scaledToFill()
@@ -32,7 +32,11 @@ struct VideoView: View {
                     viewModel.player.pause()
                 }
             
+            //MARK: - View
             VStack {
+                
+                //MARK: - Top
+                
                 ZStack {
                     Rectangle()
                         .fill(LinearGradient(
@@ -56,7 +60,7 @@ struct VideoView: View {
                 
                 Spacer()
                 
-                
+                //MARK: - Bottom
                 ZStack {
                     
                     Rectangle()
@@ -107,14 +111,11 @@ struct VideoView: View {
                 }
                 .frame(height: 100)
                 .padding(.bottom, 20)
-                
             }
             .ignoresSafeArea(edges: .vertical)
             .padding(.bottom)
         }
-        .preferredColorScheme(.dark) // white tint on status bar
-        
-//        .navigationBarHidden(true)
+        .preferredColorScheme(.dark)
     }
 }
 

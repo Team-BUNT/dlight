@@ -10,7 +10,6 @@ import AVKit
 
 class DanceRecommendViewModel: ObservableObject {
     
-    
     @Published var index = 0
     @Published var top = 0
     @Published var isShowStyleView = false {
