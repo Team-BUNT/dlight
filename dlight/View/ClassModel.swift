@@ -17,9 +17,9 @@ struct ClassData: Hashable {
 
 class ClassViewModel: ObservableObject {
     @Published var classList = [
-        ClassData(classImage: "bunt", className: "루크의 뚝딱 클래스", studioName: .bunt, studioAddress: "서울특별시 구로구 XXX XXX", classTime: "11. 17. 20:00"),
-        ClassData(classImage: "bonafide", className: "똑딱 클래스", studioName: .bonafide, studioAddress: "서울특별시 용산구 XXX XXX", classTime: "11. 17. 20:00"),
-        ClassData(classImage: "Dancer", className: "루크의 뚝딱", studioName: .movidic, studioAddress: "서울특별시 강남구 XXX XXX", classTime: "11. 17. 20:00")
+        ClassData(classImage: "bunt", className: "정규 코레오", studioName: .bunt, studioAddress: "서울특별시 구로구 XXX XXX", classTime: "11. 17. 20:00"),
+        ClassData(classImage: "bonafide", className: "Pop-up", studioName: .bonafide, studioAddress: "서울특별시 용산구 XXX XXX", classTime: "11. 17. 20:00"),
+        ClassData(classImage: "newflare", className: "정규 베이직", studioName: .newFlare, studioAddress: "서울특별시 강남구 XXX XXX", classTime: "11. 17. 20:00")
     ]
 }
 

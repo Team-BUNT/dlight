@@ -10,6 +10,7 @@ import SwiftUI
 struct PlayerView : View {
     
     @Binding var data : [Video]
+    @Binding var index: Int
     
     var body: some View{
         
@@ -24,11 +25,9 @@ struct PlayerView : View {
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                         .offset(y: -5)
                     
-                    if self.data[i].replay{
+                    if self.data[i].replay {
                         
                         Button(action: {
-                            
-                            // playing the video again...
                             
                             self.data[i].replay = false
                             self.data[i].player.seek(to: .zero)
@@ -37,29 +36,20 @@ struct PlayerView : View {
                         }) {
                             
                             Image(systemName: "goforward")
-                            .resizable()
-                            .frame(width: 55, height: 60)
-                            .foregroundColor(.white)
+                                .resizable()
+                                .frame(width: 55, height: 60)
+                                .foregroundColor(.white)
                         }
                     }
-                    
                 }
             }
         }
         .onAppear {
-            
-            // doing it for first video because scrollview didnt dragged yet...
-            
-            self.data[0].player.play()
-            
-            self.data[0].player.actionAtItemEnd = .none
-            
-            NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.data[0].player.currentItem, queue: .main) { (_) in
-                
-                // notification to identify at the end of the video...
-                
-                // enabling replay button....
-                self.data[0].replay = true
+            self.data[self.index].player.play()
+            self.data[self.index].player.actionAtItemEnd = .none
+
+            NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.data[self.index].player.currentItem, queue: .main) { (_) in
+                self.data[self.index].replay = true
             }
         }
     }

@@ -17,24 +17,21 @@ struct DanceRecommendView: View {
             ZStack {
                 
                 PlayerScrollView(data: $vm.data, index: $vm.index)
-//                    .onDisappear {
-//                        for i in vm.data {
-//                            i.player.pause()
-//                        }
-//                    }
+                    .onDisappear {
+                        vm.data[vm.index].player.pause()
+                    }
                 
+                //MARK: - Gradient Background
                 VStack {
                     
-                    //Rectangle 16
-                    //Rectangle 16
                     Rectangle()
                         .fill(LinearGradient(
-                                gradient: Gradient(stops: [
-                            .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)), location: 0),
-                            .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), location: 1)]),
-                                startPoint: UnitPoint(x: 0.5, y: 0.8),
-                                endPoint: UnitPoint(x: 0.5, y: -3.0616171314629196e-2)))
-                    .frame(height: 150)
+                            gradient: Gradient(stops: [
+                                .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)), location: 0),
+                                .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), location: 1)]),
+                            startPoint: UnitPoint(x: 0.5, y: 0.8),
+                            endPoint: UnitPoint(x: 0.5, y: -3.0e-2)))
+                        .frame(height: 150)
                     
                     Spacer()
                     
@@ -43,13 +40,13 @@ struct DanceRecommendView: View {
                             gradient: Gradient(stops: [
                                 .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)), location: 0),
                                 .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), location: 1)]),
-                            startPoint: UnitPoint(x: 0.5, y: -3.0616171314629196e-17),
-                            endPoint: UnitPoint(x: 0.5, y: 0.9999999999999999)))
+                            startPoint: UnitPoint(x: 0.5, y: -3.0e-17),
+                            endPoint: UnitPoint(x: 0.5, y: 0.8)))
                         .frame(height: 300)
                 }
                 
                 VStack {
-                    
+                    //MARK: - Top
                     HStack {
                         
                         NavigationLink {
@@ -61,12 +58,10 @@ struct DanceRecommendView: View {
                                 .shadow(radius: 10)
                         }
                         .padding(.leading)
-
                         
                         Spacer()
                         
                         Button {
-                            //스타일 시트
                             vm.isShowStyleView.toggle()
                         } label: {
                             Text("스타일 다시 정하기")
@@ -80,37 +75,11 @@ struct DanceRecommendView: View {
                     
                     Spacer()
                     
+                    //MARK: - Bottom
                     HStack {
                         ForEach(vm.data[vm.index].tag, id: \.self) { tag in
-                            Text("#\(tag)")
-                                .foregroundColor(Color("Primary"))
-                                .font(.system(size: 17, weight: .semibold))
-                                .padding(.horizontal, 16)
-                                .padding(.vertical, 8)
-                                .background(
-                                    Capsule()
-                                        .fill(.white)
-                                )
+                            hashtagCapsuleView(tag: tag)
                         }
-//                        Text("세련된")
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 17, weight: .semibold))
-//                            .padding(.horizontal, 16)
-//                            .padding(.vertical, 8)
-//                            .background(
-//                                Capsule()
-//                                .fill(Color("Primary"))
-//                            )
-//
-//                        Text("절제된")
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 17, weight: .semibold))
-//                            .padding(.horizontal, 16)
-//                            .padding(.vertical, 8)
-//                            .background(
-//                                Capsule()
-//                                .fill(Color("Primary"))
-//                            )
                         
                         Spacer()
                     }
@@ -142,8 +111,6 @@ struct DanceRecommendView: View {
                             }
                         }
                         .frame(width: 155)
-                        
-                        
                     }
                     .frame(height: 50)
                     .padding(20)
@@ -161,6 +128,19 @@ struct DanceRecommendView: View {
         .edgesIgnoringSafeArea(.all)
         .preferredColorScheme(.dark) // white tint on status bar
         
+    }
+    
+    //MARK: - Helper
+    private func hashtagCapsuleView(tag: String) -> some View {
+        Text("#\(tag)")
+            .foregroundColor(Color("Primary"))
+            .font(.system(size: 17, weight: .semibold))
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
+            .background(
+                Capsule()
+                    .fill(.white)
+            )
     }
 }
 

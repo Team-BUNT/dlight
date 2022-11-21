@@ -18,7 +18,7 @@ struct PlayerScrollView : UIViewRepresentable {
         
         let view = UIScrollView()
         
-        let childView = UIHostingController(rootView: PlayerView(data: self.$data))
+        let childView = UIHostingController(rootView: PlayerView(data: self.$data, index: self.$index))
         
         // each children occupies one full screen so height = count * height of screen...
         
@@ -82,17 +82,12 @@ struct PlayerScrollView : UIViewRepresentable {
                     parent.data[i].player.pause()
                 }
                 
-                // playing next video...
-                
                 parent.index = index
                 parent.data[index].player.play()
                 parent.data[index].player.actionAtItemEnd = .none
                 
                 NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: parent.data[index].player.currentItem, queue: .main) { (_) in
-                    
-                    // notification to identify at the end of the video...
-                    
-                    // enabling replay button....
+                
                     self.parent.data[self.index].replay = true
                 }
             }

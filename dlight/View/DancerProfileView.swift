@@ -125,15 +125,17 @@ struct ClassRow: View {
                 Text(className)
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundColor(Color.white)
-                    .tracking(-0.41)
+//                    .padding(.bottom, 2)
+
+                
                 Text(studioName)
                     .font(.system(size: 15, weight: .regular))
                     .foregroundColor(Color("Text-Secondary"))
-                    .tracking(-0.24)
+                    
                 Text(studioAddress)
                     .font(.system(size: 12, weight: .regular))
                     .foregroundColor(Color("Text-Secondary"))
-                    .tracking(-0.24)
+                    
             }
             
             Spacer()

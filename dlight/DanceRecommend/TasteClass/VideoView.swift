@@ -25,7 +25,6 @@ struct VideoView: View {
             CustomVideoPlayer(playerVM: viewModel)
                 .ignoresSafeArea(edges: .vertical)
                 .scaledToFill()
-
                 .onAppear {
                     viewModel.player.play()
                 }
@@ -52,6 +51,7 @@ struct VideoView: View {
                             .foregroundColor(.white)
                             .shadow(color: .black, radius: 10)
                     }
+                    .padding(.top, 30)
                 }
                 
                 Spacer()
